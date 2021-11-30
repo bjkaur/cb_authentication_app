@@ -36,5 +36,7 @@ module CbAuthenticationApp
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    # Inlcude JWT in lib folder when rails application loads
+    config.autoload_paths << Rails.root.join('lib')
   end
 end
